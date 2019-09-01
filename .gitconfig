@@ -1,0 +1,15 @@
+[user]
+	email = nabil@bendafi.fr
+	name = Nabil BENDAFI
+[core]
+	editor = vim
+[diff "ansible-vault"]
+	textconv = "ansible-vault view"
+	cachetextconv = false
+[merge "ansible-vault"]
+	name = ansible-vault merge driver
+	driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
+[push]
+	default = simple
+[rerere]
+	enabled = true
